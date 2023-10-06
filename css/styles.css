@@ -114,6 +114,9 @@ ol {
   line-height: 1.5; /* 24/16 */
   letter-spacing: 0.02em; /* 0.32/16 */
   padding: 24px 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
@@ -138,6 +141,9 @@ address {
 
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-address-link:hover,
 .header-address-link:focus {
@@ -186,6 +192,9 @@ address {
   padding: 16px 32px;
   min-width: 169px;
   border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover {
   background-color: #404bbf;
@@ -225,6 +234,18 @@ address {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
+.features-icon-container {
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
 .features-item {
   flex-basis: calc((100% - 72px) / 4);
 }
@@ -257,6 +278,14 @@ address {
   border-bottom: 1px solid #e7e9fc;
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 72px) / 4);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-list-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-list-container {
@@ -275,6 +304,29 @@ address {
 }
 .team-list-text {
   text-align: center;
+}
+.team-icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.team-icons-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  fill: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-icons-item:hover,
+.team-icons-item:focus {
+  background-color: #31d0aa;
 }
 /* ====================team end============= */
 /* ===================portfolio============== */
@@ -302,14 +354,44 @@ address {
 .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
 }
-
+.portfolio-item:hover .cashless-cover-block {
+  transform: translateY(0);
+}
+.cashless-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
 .portfolio-subtitle {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.2; /* 120% */
+  line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+}
+.cashless-cover-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4d5ae5;
+  padding: 40px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cashless-cover-text {
+  color: #f4f4fd;
+
+  font-family: Roboto;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* ===============portfolio end========== */
@@ -343,4 +425,31 @@ address {
   color: #f4f4fd;
   max-width: 264px;
 }
+.footer-social-title {
+  color: #fff;
+  font-family: Roboto;
+}
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+}
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  fill: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social-item:hover,
+.footer-social-item:focus {
+  background-color: #31d0aa;
+}
+
 /* ==================footer end=========== */
