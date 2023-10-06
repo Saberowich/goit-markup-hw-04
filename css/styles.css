@@ -131,6 +131,7 @@ address {
   gap: 40px;
 }
 .header-address-item {
+  position: relative;
 }
 .header-address-link {
   color: #434455;
@@ -148,6 +149,16 @@ address {
 .header-address-link:hover,
 .header-address-link:focus {
   color: #404bbf;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  width: 100%;
 }
 
 /* ==================header end============ */
