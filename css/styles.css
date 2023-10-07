@@ -150,6 +150,16 @@ address {
 .header-address-link:focus {
   color: #404bbf;
 }
+.header-nav-item {
+  position: relative;
+}
+.header-nav-item:hover,
+:focus {
+  color: #404bbf;
+}
+.current {
+  color: #404bbf;
+}
 .current::after {
   content: "";
   position: absolute;
@@ -417,6 +427,10 @@ address {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.footer-container {
+  display: flex;
+  gap: 120px;
+}
 .footer-logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -440,6 +454,8 @@ address {
 .footer-text {
   color: #f4f4fd;
   max-width: 264px;
+}
+.footer-social-container {
 }
 .footer-social-title {
   color: #fff;
