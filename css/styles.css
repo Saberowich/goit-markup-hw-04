@@ -153,7 +153,6 @@ address {
   color: #404bbf;
 }
 .header-nav-item {
-  position: relative;
 }
 .header-nav-item:hover,
 :focus {
@@ -161,6 +160,7 @@ address {
 }
 .current {
   color: #404bbf;
+  position: relative;
 }
 .current::after {
   content: "";
