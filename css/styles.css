@@ -339,6 +339,11 @@ address {
 .team-icons-item:focus {
   background-color: #31d0aa;
 }
+.team-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* ====================team end============= */
 /* ===================portfolio============== */
 .portfolio-title {
@@ -444,6 +449,11 @@ address {
   display: flex;
   gap: 16px;
   justify-content: flex-start;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer-social-item {
   width: 40px;
