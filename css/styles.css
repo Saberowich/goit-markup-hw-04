@@ -186,7 +186,7 @@ address {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
 }
 .hero-container {
